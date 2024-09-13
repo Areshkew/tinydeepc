@@ -33,10 +33,12 @@ Lineal* lineal_create(void);
  *   model - A pointer to the Lineal structure (the model to train).
  *   x     - A pointer to an array of input data (the feature values).
  *   y     - A pointer to an array of output data (the true target values).
+ *   size   - The data size.
+ *   
  *
  * Description:
- *   This function computes the cost function C(w) and its derivative (as shown 
- *   in the image). It updates the weight (w) by performing gradient descent 
+ *   This function computes the cost function C(w) and its derivative. 
+ *   It updates the weight (w) by performing gradient descent 
  *   or another optimization algorithm. The goal is to minimize the cost function:
  * 
  *       C(w) = (1/n) * Σ (x_i * w - y_i)^2
